@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSphere - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="login-container">
+        <form id="login-form">
+            <!-- UPDATED: Logo Added -->
+            <img src="images/logo.png" alt="EduSphere Logo" class="login-logo">
+            <h1>EduSphere</h1>
+            <p>Welcome! Please log in to continue.</p>
+            
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <p id="error-message"></p>
+            
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+    </main>
+
+    <!-- Custom Modal -->
+    <div id="welcome-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

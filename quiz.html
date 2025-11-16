@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - EduSphere</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="EduSphere Logo">
+                <span>EduSphere</span>
+            </div>
+            <div class="user-info">
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search courses...">
+                    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+
+                <span id="welcome-user"></span>
+                <button id="logout-btn" class="btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="quiz-container">
+            <h2 id="quiz-title">Loading Quiz...</h2>
+            
+            <div id="question-container" style="display: none;">
+                <p id="question-progress"></p>
+                <h3 id="question-text"></h3>
+                <div id="options-container">
+                    </div>
+            </div>
+            
+            <button id="next-btn" class="btn" style="display: none;">Next</button>
+            <button id="submit-btn" class="btn btn-primary" style="display: none;">Submit Quiz</button>
+        </div>
+
+        <div id="results-container" style="display: none;">
+            </div>
+
+    </main>
+
+    <div id="score-modal" class="modal">
+        <div class="modal-content">
+            <h2 id="modal-title">Quiz Complete!</h2>
+            <p id="modal-message"></p>
+            <button id="view-answers-btn" class="btn">View Answers</button>
+        </div>
+    </div>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

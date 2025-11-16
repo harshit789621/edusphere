@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Catalog - EduSphere</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="EduSphere Logo">
+                <span>EduSphere</span>
+            </div>
+            
+            <div class="user-info">
+            
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search courses...">
+                    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+
+                <span id="welcome-user"></span>
+                <button id="logout-btn" class="btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2>Course Catalog</h2>
+        
+        <div class="catalog-layout">
+            
+            <aside id="filter-sidebar">
+                <h3>Categories</h3>
+                <button class="btn filter-btn active" data-category="all">All</button>
+                <button class="btn filter-btn" data-category="Tech">Tech</button>
+                <button class="btn filter-btn" data-category="Creative">Creative</button>
+                <button class="btn filter-btn" data-category="Business">Business</button>
+            </aside>
+
+            <div id="course-grid">
+                </div>
+
+        </div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>

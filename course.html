@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Overview - EduSphere</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="EduSphere Logo">
+                <span>EduSphere</span>
+            </div>
+            <div class="user-info">
+                <div class="search-container">
+                    <input type="text" id="search-bar" placeholder="Search courses...">
+                    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </div>
+
+                <span id="welcome-user"></span>
+                <button id="logout-btn" class="btn">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="catalog.html" class="back-link">&larr; Back to Courses</a>
+        
+        <img id="course-header-image" src="" alt="Course header">
+
+        <h1 id="course-title">Loading...</h1>
+        
+        <div class="course-content">
+            <div class="course-details">
+                <h2>Course Overview</h2>
+                <p id="course-overview"></p>
+
+                <h2>Instructor</h2>
+                <p id="course-instructor"></p>
+                
+                <h2>Resources</h2>
+                <ul id="resource-list">
+                    </ul>
+            </div>
+            
+            <div class="course-actions">
+                <img src="images/quiz.jpeg" alt="Start Quiz" class="quiz-promo-img">
+                <h3>Start Learning</h3>
+                <button id="start-quiz-btn" class="btn btn-primary">Start Quiz</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
